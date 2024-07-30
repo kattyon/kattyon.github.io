@@ -1,0 +1,95 @@
+@charset "utf-8";
+* {
+    /* フォントを指定するプロパティ */
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "メイリオ";
+    font-size: 14px;
+}
+
+main > section > nav > ul > li {
+    /* ブロック要素の表示をインライン要素のように変更する */
+    display: inline;
+
+    /* マージン */
+    margin: 10px 8px 0 0;
+
+    /* ボーダー */
+    border: 1px solid #000;
+    border-radius: 8px;
+
+    /* パディング */
+    padding: 8px 4px;
+
+    background: linear-gradient(#ffffff, #acb4a8);
+    text-align: center;
+}
+main > section > nav > ul > li > a {
+    /* テキスト装飾 */
+    text-decoration: none;
+}
+
+
+/* ポインタが乗っている状態 */
+a:hover {
+    font-size: 1.3rem;
+}
+#top{
+    text-align: center;
+}
+
+.containar{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "header-A header-A"
+        "section-A"
+        "div-A"
+        "footer-A footer-A" 
+        ;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+section{
+    grid-area: section-A;
+    height: auto;
+}
+div{
+    grid-area: div-A;
+    height: 400px;
+
+}
+
+
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+header {
+    background:linear-gradient(#fff,#afa);
+    grid-area: header-A;
+}
+
+main {
+    display: grid;
+    padding: 0 4px;
+    background:linear-gradient(#aaf,#acb4a8)
+}
+#menu{
+    text-decoration: none;
+    text-align: left;
+    font-size:17px
+
+}
+
+aside {
+    padding: 0 8px;
+    background: #aaf;
+    grid-area: aside-A;
+}
+
+footer {
+    background: lightblue;
+    grid-area: footer-A;
+    font-size: 14px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>花火</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body >
+    <div class="container">
+        <header id="top">
+            <h1>光華を打ち上げよう</h1>
+        </header>
+
+        <main>
+            <section>
+                <h5 id = "menu">メニュー</h5>
+            <!--HTMLからJavascriptの関数を実行する-->
+            <!--ボタンとonclick属性を使うのが一番簡単-->
+                <nav>
+                    <ul>
+                        <li><button id="button1" type="button" onclick="mode(1)">自動</button></li>
+                        <li><button id="button2" type="button" onclick="mode(2)">クリック</button></li>
+                    </ul>
+                </nav>
+            </section>
+            
+        </main>
+        <div id="canvas" ></div>
+        <footer>
+            <a href="#top"><p>トップに戻る</p></a>
+            Copyright &copy; Kazuma Kobayashi, All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
